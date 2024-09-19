@@ -16,13 +16,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Auteur:
-  Sanne 't Hooft (vervangen door jouw naam)
+  Maryam Qadri
 
   #### Je startniveau:
-  hier je startniveau (kies uit zwart, rood óf blauw)
+  Blauw
 
   #### Je focus:
-  hier je focus (kies uit responsive óf surface plane)
+  Responsive
  
 </details>
 
@@ -36,11 +36,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+  Link naar mijn website: https://www.crunchyroll.com/
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Homepagine  
+  <img src="readme-images/homepage.png" width="375px" alt="Op deze pagina vindt je verschillende anime en nieuwtjes.">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
@@ -57,6 +57,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  - moeilijk om een video af te spelen, en als die eenmaal bezig is het moeilijk om met de controls de video te pauzeren of door te spoelen.
+  - het duurt lang om door alle items heen te gaan.
+  - bij light mode blijft de website dark, er is ook geen optie om het te veranderen.
+  - op de home pagina wordt alles voorgelezen tot op de detail ook wat je te zien krijgt als je met een muis zou hoveren. ook wordt er verteld wat voor soort code ervoor is gebruikt bijv. een heading, image, link of button.
+
+
 
 </details>
 
@@ -68,10 +74,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/homepagina.png" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/hamburgermenu.png" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
@@ -89,16 +95,40 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  - Breakdownschets ging redelijk soepel.
+
+  - In mijn eerste section gebruik ik een carrousel waarin voor elk list-item twee soorten afbeeldingen worden gebruikt: een lang formaat voor telefoons en een breed formaat voor desktops. Moet ik beide afbeeldingen plaatsen?
+
+  Zo ziet het op hun website eruit.
+
+  Lange versie:
+
+  <img src="readme-images/langeformaat.png" width="375px" alt="breakdown van nog een dynamisch deel">
+
+  Breede versie:
+
+  <img src="readme-images/breedeformaat.png" width="375px" alt="breakdown van nog een dynamisch deel">
+
+
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Splinter                 
+  | ---                           
+  | Voornamelijk hoe ik de opbouw van de code zie goed mogelijk kan aanpakken
+
+
+  | Maryam (ik)                 
+  | ---                           
+  | - In mijn eerste section gebruik ik een carrousel waarin voor elk list-item twee soorten 
+    afbeeldingen worden gebruikt: een lang formaat voor telefoons en een breed formaat voor 
+    desktops. Moet ik beide afbeeldingen plaatsen?
+   - wat kan ik beter gebruiken bij 'start watching' knop een button of een a en die stylen als een button?
+   - het gedeelte onder de afbeeldingen 
+      <img src="readme-images/carousel-navigatie.png" width="375px" alt="breakdown van nog een dynamisch deel">
+
 
 
   ### Verslag van meeting
