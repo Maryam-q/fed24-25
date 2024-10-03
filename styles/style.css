@@ -3,10 +3,8 @@
 /**************/
 *, *::after, *::before {
   box-sizing:border-box;  
+ 
 }
-
-
-
 
 
 
@@ -17,15 +15,111 @@
 	/* startje */
 	--color-text:#111;
 	--color-background:#eee;
+	--header-menu-color: #23252b;
+
+}
+
+
+/* Font styling */
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../font/Lato-Light.otf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../font/Lato-Regular.otf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../font/Lato-Bold.otf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../font/Lato-Italic.otf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../font/Lato-Hairline.otf');
+    font-weight: 100;
+    font-style: normal;
 }
 
 
 
 
+/* header nav */
 
-/****************/
-/* JOUW STYLING */
-/****************/
+header nav:nth-of-type(1) ul {
+    margin: 0;
+    padding: 0 1em;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 
-/* jouw code */
+}
 
+header > nav:nth-of-type(2) {
+    color: white;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    padding: 1em;
+    align-content: start;
+    gap: 1em;
+  
+
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 4em;
+    bottom: 0;
+    background-color: var(--header-menu-color);
+
+    translate: -100%;
+    transition:1s;
+}
+
+header > nav ul {
+    display: grid;
+    padding: 0;
+    list-style: none;
+    padding: 1em;
+    align-content: start;
+    gap: 1em;
+}
+
+nav:nth-of-type(1) button {
+    border: none;
+    background-color: transparent;
+}
+
+nav:nth-of-type(2) button {
+    background-color: #ff640a;
+    border: none;
+    color: #eee;
+    padding: 1em 2em;
+    border-radius: .5em;
+    justify-self: start;
+    font-weight: 700;
+    font-size: .85em;
+}
+
+header > nav.toonMenu {
+    translate: 0;
+}

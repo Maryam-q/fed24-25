@@ -134,10 +134,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - de images van de carousel moeten in css geplaatst worden als background-img 
+  
 
 </details>
 
@@ -151,18 +149,21 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+ Ik had wat lastigheden met mijn menu, ik kreeg die namelijk niet open. In de les was het gelukt met hulp, ik had een a met daarin een button wat dus niet samen werkt omdat ze beiden een actie uitvoeren.
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Uri                 
+  | ---                           
+  | -In mijn hamburgermenu zitten er ontzettend veel steeds herhaalde onderdelen, moet ik die echt allemaal uitwerken?
+-Wanneer mag je classes gebruiken?
 
+
+  | Maryam (ik)                 
+  | Waar ik moeite mee heb is mijn carousel, ik krijg mijn bg-img niet te zien en moet nog wat styling bij denk ik
+        
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen

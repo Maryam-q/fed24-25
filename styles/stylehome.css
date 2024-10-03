@@ -1,0 +1,108 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+    box-sizing:border-box;  
+    
+  }
+  
+  
+  
+  /*********************/
+  /* CUSTOM PROPERTIES */
+  /*********************/
+  :root {
+      /* startje */
+      --color-text:#111;
+      --color-background:#eee;
+      --header-menu-color: #23252b;
+  
+  }
+  
+  
+  /* Font styling */
+  
+  @font-face {
+      font-family: 'Lato';
+      src: url('../font/Lato-Light.otf');
+      font-weight: 300;
+      font-style: normal;
+  }
+  
+  @font-face {
+      font-family: 'Lato';
+      src: url('../font/Lato-Regular.otf');
+      font-weight: 400;
+      font-style: normal;
+  }
+  
+  @font-face {
+      font-family: 'Lato';
+      src: url('../font/Lato-Bold.otf');
+      font-weight: 700;
+      font-style: normal;
+  }
+  
+  @font-face {
+      font-family: 'Lato';
+      src: url('../font/Lato-Italic.otf');
+      font-weight: 400;
+      font-style: normal;
+  }
+  
+  @font-face {
+      font-family: 'Lato';
+      src: url('../font/Lato-Hairline.otf');
+      font-weight: 100;
+      font-style: normal;
+  }
+
+
+  body {
+    font-family: 'lato-regular';
+  }
+
+
+  /* STYLEN CAROUSEL */
+
+    section:nth-of-type(1) ul li:nth-of-type(1) {
+    /* background-image: url('../images/carousel/onepiece.png'); */
+    background-position: center;
+  }
+
+
+  section:nth-of-type(1) ul li:nth-of-type(2) {
+    /* background-image: url('../images/carousel/tasuketsu.png'); */
+    background-position: center;
+  }
+
+
+  section:nth-of-type(1) ul li:nth-of-type(3) {
+    /* background-image: url('../images/carousel/wistoria.png'); */
+    background-position: center;
+  }
+
+
+  /* STYLEN BUTTON CAROUSEL */
+
+  /* section:nth-of-type(1) ul:nth-of-type(1) li a {
+    background-color: #f05032;
+    color: #fff;
+    border: none;
+    padding: 1em 5em;
+    cursor: pointer;
+    text-transform: uppercase;
+  } */
+
+
+  /* STYLEN SLIDES MOST POPULAR */
+
+  section:nth-of-type(2) section > ul {
+    display: grid;
+    grid-auto-flow: column;
+    margin: 1em;
+    padding: 1em;
+    max-width: 100%;
+    overflow-x: auto;
+
+  }

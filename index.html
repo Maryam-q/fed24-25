@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 
 <head>
 	<meta charset="UTF-8">
@@ -9,78 +9,221 @@
 	<title>Crunchyroll</title>
 
 	<link href="styles/style.css" rel="stylesheet">
-	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+	<link href="styles/stylehome.css" rel="stylesheet">
+	<link rel="icon" type="image/svg+xml" href="images/navigatie/logosmall.svg">
 </head>
 
 <body>
+
 	<header>
 		<nav>
-			<li><a href=""><img src="images/navigatie/hamburgermenu.svg" alt=""></a></li>
-			<li><a href=""><img src="images/navigatie/logosmall.svg" alt=""></a></li>
-			<li><a href=""><img src="images/navigatie/search.svg" alt=""></a></li>
-			<li><a href=""><img src="images/navigatie/profile.svg" alt=""></a></li>
+			<ul>
+				<li><button><img src="images/navigatie/menu.png"
+							alt="Three stacked horizontal lines representing the navigation menu icon"></button></li>
+
+							<!-- <a href="https://www.flaticon.com/free-icons/hamburger" title="hamburger icons">Hamburger icons created by feen - Flaticon</a> -->
+				<li>
+					<h1><a href=""><img src="images/navigatie/logosmall.svg"
+								alt="Welcome to Crunchyroll. Have fun watching!"></a></h1>
+				</li>
+				<li><a href=""><img src="images/navigatie/search.png"
+							alt="Magnifying glass icon representing the search function"></a></li>
+
+							<!-- <a href="https://www.flaticon.com/free-icons/search" title="search icons">Search icons created by Royyan Wijaya - Flaticon</a> -->
+
+				<li><a href=""><img src="images/navigatie/user.png"
+							alt="Outline of a person representing the user profile"></a></li>
+
+							<!-- <a href="https://www.flaticon.com/free-icons/user" title="user icons">User icons created by Freepik - Flaticon</a> -->
+			</ul>
+		</nav>
+
+		<nav>
+			<button aria-hidden="true">Close</button>
+			<ul>
+				<li>Popular</li>
+				<li>New</li>
+				<li>Alphabetical</li>
+				<li>Simulcast Season</li>
+				<li>Release Calendar</li>
+				<li>
+					<details>
+						<summary>Genres</summary>
+						<ul>
+							<li>Action</li>
+							<li>Comedy</li>
+							<li>Drama</li>
+							<li>Fantasy</li>
+							<li>Shonen</li>
+						</ul>
+					</details>
+				</li>
+			</ul>
 		</nav>
 	</header>
-	<section>
-		<ul>
-			<li>
-				<img src="images/carousel/onepiece.png" alt="">
-				<p>Subtitled ◆ Action, Adventure, Fantasy, Shonen</p>
-				<a href="">Start wachting</a>
-				<!-- a stylen als een button -->
-			</li>
-			<li>
-				<img src="images/carousel/tasuketsu.png" alt="">
-				<p>16 ◆ Subtitled</p>
-				<a href="">Start wachting</a>
-			</li>
-			<li>
-				<img src="images/carousel/wistoria.png" alt="">
-				<p>16 ◆ Sub | Dub</p>
-				<a href="">Start wachting</a>
-			</li>
-		</ul>
-	</section>
 
-	<section>
+
+
+	<main>
+		<!-- carousel met 3 plaatjes -->
 		<section>
 			<ul>
 				<li>
-					<h3>One Piece</h3>
-					<p>Subtitled</p>
-					<a href="onepiece.html"><img src="images/popularslide/onepiecepopular.jpg" alt=""></a>
+					<!-- <img src="images/carousel/onepiece.png"
+						alt="One Piece banner showing the main character Luffy and his crew"> -->
+					<!-- img wordt bgimg in css -->
+					<p>Subtitled ◆ Action, Adventure, Fantasy, Shonen</p>
+					<a href="onepiece.html">Start wachting</a>
+					<!-- a stylen als een button -->
 				</li>
 				<li>
-					<h3>Black Clover</h3>
-					<p>Subtitled</p>
-					<a href=""><img src="images/popularslide/blackclover.jpg" alt=""></a>
+					<!-- <img src="images/carousel/tasuketsu.png"
+						alt="Tasoketsu banner with the characters looking at a paper/letter"> -->
+					<p>16 ◆ Subtitled</p>
+					<a href="#">Start wachting</a>
 				</li>
 				<li>
-					<h3>Blue Lock</h3>
-					<p>Subtitled</p>
-					<a href=""><img src="images/popularslide/bluelock.jpg" alt=""></a>
-				</li>
-				<li>
-					<h3>Naruto</h3>
-					<p>Subtitled</p>
-					<a href=""><img src="images/popularslide/naruto.jpg" alt=""></a>
-				</li>
-				<li>
-					<h3>Jujutsu Kaisen</h3>
-					<p>Subtitled</p>
-					<a href=""><img src="images/popularslide/jujutsukaisen.jpe" alt=""></a>
-				</li>
-				<li>
-					<h3>Spy x Family</h3>
-					<p>Subtitled</p>
-					<a href=""><img src="images/popularslide/spyxfamily.jpg" alt=""></a>
+					<!-- <img src="images/carousel/wistoria.png"
+						alt="Wistoria banner featuring a group of magical characters in a fantasy setting"> -->
+					<p>16 ◆ Sub | Dub</p>
+					<a href="#">Start wachting</a>
 				</li>
 			</ul>
 		</section>
 
-	</section>
+		<section>
+			<!-- Most Popular slide/carousel -->
+			<section>
+				<h2>Most Popular</h2>
+				<ul>
+					<li>
+						<h3>One Piece</h3>
+						<p>Subtitled</p>
+						<a href="onepiece.html"><img src="images/popularslide/onepiecepopular.jpg"
+								alt="One Piece, showing the main character Luffy and his crew behind him."></a>
+					</li>
+					<li>
+						<h3>Black Clover</h3>
+						<p>Subtitled</p>
+						<a href="#"><img src="images/popularslide/blackclover.jpg"
+								alt="Black Clover, couple characters in action mid air."></a>
+					</li>
+					<li>
+						<h3>Blue Lock</h3>
+						<p>Subtitled</p>
+						<a href="#"><img src="images/popularslide/bluelock.jpg"
+								alt="Blue Lock, two players surrounded by green smoke."></a>
+					</li>
+					<li>
+						<h3>Naruto</h3>
+						<p>Subtitled</p>
+						<a href="#"><img src="images/popularslide/naruto.jpg"
+								alt="Naruto, the three main characters standing confidently."></a>
+					</li>
+					<li>
+						<h3>Jujutsu Kaisen</h3>
+						<p>Subtitled</p>
+						<a href="#"><img src="images/popularslide/jujutsukaisen.jpe"
+								alt="Jujutsu Kaisen, the main character standing in the middel with all the characters faces surrounding him."></a>
+					</li>
+					<li>
+						<h3>Spy x Family</h3>
+						<p>Subtitled</p>
+						<a href="#"><img src="images/popularslide/spyxfamily.jpg"
+								alt="Spy x Family, the characters reading in action on one side and playfull on the other side."></a>
+					</li>
+				</ul>
+			</section>
+		</section>
 
 
+			<section>
+				<img src="images/banner/bungostraydogs.jpeg" alt="Bungo Stray Dogs banner, intense colors">
+			</section>
+			<section>
+				<h2>Bungo Stray Dogs</h2>
+				<p>Sub | Dub</p>
+
+				<p>Kicked out of his orphanage and on the verge of starving to death, Nakajima Atsushi meets some
+					strange men. One of them, Dazai Osamu, is a suicidal man attempting to drown himself in broad
+					daylight. The other, bespectacled Kunikida Doppo, nervously stands by flipping through a notepad.
+					Both are members of the "Armed Detective Agency" said to solve incidents that even the military and
+					police won't touch. Atsushi ends up accompanying them on a mission to eliminate a man-eating tiger
+					that's been terrorizing the population... </p>
+				<a href="https://www.crunchyroll.com/watch/G64P1GE8R/fortune-is-unpredictable-and-mutable">START
+						WATCHING S1 E1</a>
+			</section>
+
+			<section>
+				<h2>New Episodes</h2>
+				<a href="https://www.crunchyroll.com/simulcastcalendar"></a>
+				<h3>Today</h3>
+				<a href="https://www.crunchyroll.com/series/G4PH0WXVJ/spy-x-family">
+					<article>
+						<img src="images/popularslide/spyxfamily.jpg" alt="Spy x Family banner">
+						<h4>SPY X FAMILY</h4>
+						<p>13 Episodes</p>
+						<p>Sub | Dub</p>
+					</article>
+				</a>
+				<a href="https://www.crunchyroll.com/series/G4PH0WEKE/blue-lock">
+					<article>
+						<img src="images/popularslide/bluelock.jpg" alt="Blue Lock banner">
+						<h4>Blue Lock</h4>
+						<p>24 Episodes</p>
+						<p>Subtitled</p>
+					</article>
+				</a>
+				<h3>Yesterday</h3>
+				<a href="https://www.crunchyroll.com/series/GRMG8ZQZR/one-piece">
+					<article>
+						<img src="images/popularslide/onepiecepopular.jpg" alt="">
+						<h4>One Piece</h4>
+						<p>Season 16</p>
+						<p>Sub | Dub</p>
+					</article>
+				</a>
+			</section>
+
+			<section>
+				<img src="images/footer/yuzu.png" alt="sleeping cat.">
+				<h2>Still looking for something to watch? <br>
+					Check out our full library</h2>
+				<a href="https://www.crunchyroll.com/videos/popular"> VIEW ALL</a>
+			</section>
+	</main>
+	<footer>
+		<section>
+			<h3>Navigation</h3>
+			<ul>
+				<li><a href="https://www.crunchyroll.com/videos/popular">Browse Popular</a></li>
+				<li><a href="https://www.crunchyroll.com/simulcasts/seasons/summer-2023">Browse Simulcasts</a></li>
+				<li><a href="https://www.crunchyroll.com/comics/manga">Browse Manga</a></li>
+				<li><a href="https://www.crunchyroll.com/simulcastcalendar">Release Calander</a></li>
+				<li><a href="https://www.crunchyroll.com/news">News</a></li>
+				<li><a href="https://store.crunchyroll.com/">Store</a></li>
+				<li><a href="https://www.crunchyroll.com/games/index.html">Games</a></li>
+			</ul>
+		</section>
+		<section>
+			<h3>Connent With Us</h3>
+			<ul>
+				<li><a href="https://www.youtube.com/user/crunchyroll/"><img src="images/footer/youtube.svg"
+							alt="">Youtube</a></li>
+				<li><a href="https://www.facebook.com/Crunchyroll/"><img src="images/footer/facebook.svg"
+							alt="">Facebook</a></li>
+				<li><a href="https://www.instagram.com/crunchyroll/"><img src="images/footer/instagram.svg"
+							alt="">Instagram</a></li>
+				<li><a href="https://www.tiktok.com/@crunchyroll"><img src="images/footer/tiktok.svg" alt="">TikTok</a>
+				</li>
+			</ul>
+		</section>
+		<section>
+			<h4>SONY PICTURES</h4>
+			&copy;
+			<p>Crunchyroll, LLC</p>
+		</section>
+	</footer>
 
 	<script defer src="scripts/script.js"></script>
 </body>
