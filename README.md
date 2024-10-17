@@ -199,7 +199,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  - scroll-margin-top werkt niet, heb het op verschillende tags geprobeerd maar werkt niet (regel 157, ervoor zorgen dat het niet telkens springt als je klikt op de nav)
+  -banner gedeelte een deel va de tekst verbergen.
 
 
   ### Agenda voor meeting

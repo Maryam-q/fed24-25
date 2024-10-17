@@ -2,7 +2,9 @@
 /* CSS REMEDY */
 /**************/
 *, *::after, *::before {
-  box-sizing:border-box;  
+  box-sizing:border-box;
+  /* background-color: #23252b;
+  color: #eee; */
  
 }
 
@@ -59,6 +61,9 @@
 
 
 
+img {
+    max-width:100%;
+}
 
 /* header nav */
 
@@ -122,4 +127,90 @@ nav:nth-of-type(2) button {
 
 header > nav.toonMenu {
     translate: 0;
+}
+
+
+
+
+  /* FOOTER */
+
+  footer {
+    color: #000000;
+    padding: 1em;
+    text-align: left;
+    font-family: Arial, sans-serif;
+}
+
+footer section {
+  display: flex;
+}
+
+footer h3, footer h4 {
+    color: #000;
+    font-size: 1.2em;
+    margin-bottom: .5em;
+    display: block;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin: .2 0;
+}
+
+footer ul li a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+footer ul li a:hover {
+    color: #ff8000; 
+}
+
+footer ul li a img {
+    vertical-align: middle;
+    margin-right: .4emx;
+    height: 1em; 
+}
+
+footer p {
+    font-size: 0.8em;
+    color: #ccc;
+}
+
+footer section:last-of-type h4 {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: .3em;
+}
+
+footer section:last-of-type p {
+    font-size: 0.9em;
+    color: #ff8000; 
+}
+
+
+
+footer section:nth-of-type(2) ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+footer section:nth-of-type(2) ul li {
+  margin-bottom: .5em;
+}
+
+footer section:nth-of-type(2) ul li a {
+  display: flex;
+  align-items: center;
+}
+
+footer section:nth-of-type(2) ul li a img {
+  margin-right: .5em;
+  height: 1.5em; 
 }
