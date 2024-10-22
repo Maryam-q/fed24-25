@@ -3,9 +3,10 @@
 /**************/
 *, *::after, *::before {
     box-sizing:border-box;  
-    
+    padding: 0;
   }
   
+
   
   
   /*********************/
@@ -72,6 +73,14 @@
   main > section:nth-of-type(1) ul {
     display: flex;
     overflow: hidden;
+    padding: 0;
+  }
+
+  main > section:nth-of-type(1) p {
+    color: #eee;
+    text-shadow: .1em .1em #23252b;
+
+    /* bron text-shadow: https://www.w3schools.com/cssref/tryit.php?filename=trycss3_text-shadow */
   }
 
 
@@ -120,6 +129,12 @@
   }
 
 
+
+  main > section:nth-of-type(1) > ul:nth-of-type(1) li a:hover {
+    background-color: #c93920;
+    transition: transform 0.3s ease;
+  }
+
 /* STYLEN NAV KNOPJES CAROUSEL */
 
 main > section:nth-of-type(1) nav{
@@ -130,11 +145,11 @@ background-color: #ffffff80;
 
 
 main > section:nth-of-type(1) nav ul{
-  margin:0;
+  /* margin:0;
 	padding:0;
-	list-style-type:none;
+	list-style-type:none; */
 	
-	display:flex;
+	/* display:flex; */
 	overflow:hidden;
 	scroll-behavior:smooth;
 
@@ -147,7 +162,7 @@ main > section:nth-of-type(1) nav ul{
 	gap:1em;
   justify-content: center;
   padding-top: .5em;
-  color: #ff640a;
+
 }
 
 main > section:nth-of-type(1) > ul li{
@@ -162,9 +177,20 @@ main > section:nth-of-type(1) nav ul li a{
 display:block;
 height:1em;
 aspect-ratio:3/0.5;
-background-color:black;
+background-color:rgb(65, 65, 65);
 border-radius:.5em;
 }
+
+
+/* RESPONSIVE MAKEN CAROUSEL */
+
+
+
+
+
+
+
+
 
 
   /* STYLEN SLIDES MOST POPULAR */
@@ -202,8 +228,7 @@ section:nth-of-type(2) li {
 
 
 section:nth-of-type(2) li img {
-/* het lukt niet om de img grooter the krijgen */
-/* width: 100%; */
+min-width: 8em;
   transition: transform 0.3s ease;
 }
 
@@ -237,6 +262,10 @@ section:nth-of-type(2) li p {
 
 
 
+
+
+
+
 /* BANNER STYLEN */
 
 section:nth-of-type(4) {
@@ -248,7 +277,7 @@ section:nth-of-type(4) {
 
 section:nth-of-type(3) img {
   width: 100%; 
-  max-width: 100%x; 
+  max-width: 100%; 
   margin-bottom: 1em; 
 }
 
@@ -297,3 +326,223 @@ section:nth-of-type(4) > a {
   text-transform: uppercase;
 }
 
+
+
+section:nth-of-type(4) > a:hover {
+  background-color: #c93920;
+  transition: transform 0.3s ease;
+}
+
+
+/* NEW EPISODE SECTION */
+
+
+section:nth-of-type(5) {
+  padding: 1em;
+ 
+}
+
+section:nth-of-type(5) h2 {
+  color: #000;
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+section:nth-of-type(5) article {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+section:nth-of-type(5) article img {
+  width: 30%; 
+  height: auto;
+  border-radius: 4px;
+  margin-right: 1em;
+}
+
+section:nth-of-type(5) article h4 {
+  font-size: 1.2em;
+  margin: 0;
+  font-weight: bold;
+  color: #000;
+}
+
+section:nth-of-type(5) article p {
+  font-size: 0.9em;
+  color: #ccc;
+  margin: 0.2em 0;
+}
+
+section:nth-of-type(5) a {
+  text-decoration: none;
+  color: inherit;
+}
+
+section:nth-of-type(5) h3 {
+  border-bottom: .1em solid #4f4f4f;
+  padding-bottom: 0.5em;
+  margin-top: 1em;
+}
+
+
+
+
+
+
+/* RESPONSIVE MAKEN */
+
+
+
+
+
+@media (min-width: 700px) {
+
+  /* CAROUSEL STYLING */
+  main > section:nth-of-type(1) > ul:nth-of-type(1) {
+    flex-direction: row;
+    justify-content: flex-start; 
+    min-height: 60vh; 
+
+  }
+
+  main > section:nth-of-type(1) nav {
+    flex-direction: row;
+    justify-content: flex-start; 
+
+  }
+
+  main > section:nth-of-type(1) > ul > li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: auto;
+    /* min-width: 100%; */
+    padding: 2em;
+  }
+
+  main > section:nth-of-type(1) > ul li p {
+    font-size: 1.2em;
+    
+  }
+
+  main > section:nth-of-type(1) > ul li a {
+    font-size: 1em;
+    padding: 1em 3em;
+    margin-top: 1em;
+    
+  }
+
+  main > section:nth-of-type(1) > ul li{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /* start watching button links */
+  main > section:nth-of-type(1) > ul li a {
+    align-self: self-start;
+    
+    
+  }
+
+
+
+    /*  MOST POPULAR */
+  section:nth-of-type(2) ul {
+    display: flex;
+    overflow-x: scroll; 
+    gap: 2em; 
+  }
+  
+  section:nth-of-type(2) ul li {
+    min-width: 20%; 
+  }
+  
+  section:nth-of-type(2) ul li img {
+    width: 100%;
+    height: auto;
+  }
+  
+  section:nth-of-type(2) li h3 {
+    font-size: 1em;
+  }
+  
+  section:nth-of-type(2) li p {
+    font-size: .8em;
+  
+  }
+  
+  
+  
+
+
+  /* BANNER STYLING */
+  section:nth-of-type(3) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  section:nth-of-type(3) img {
+    max-width: 50%; 
+    height: auto;
+  }
+
+  section:nth-of-type(4)  {
+    max-width: 50%; 
+    text-align: center; 
+  }
+
+  section:nth-of-type(4) h2 {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  section:nth-of-type(4) p {
+    font-size: 1.2em;
+  }
+
+  section:nth-of-type(4) a {
+    margin-top: 1em;
+    padding: 1em 3em;
+  }
+
+
+  /* lukt mij niet om de 4e section naast de 3e te krijgen, dus de tekst 
+  naast de afbeelding? ik krijg nu alleen beide op de helft van het scherm te zien*/
+
+
+
+
+
+  /* NEW EPISODES NAAST ELKAAR */
+  section:nth-of-type(5) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1em; 
+  }
+
+  section:nth-of-type(5) article {
+    width: 50%; 
+  }
+
+  section:nth-of-type(5) article img {
+    width: 30%; /* Smaller images */
+    height: auto;
+  }
+
+  section:nth-of-type(5) h4 {
+    font-size: 1.2em;
+  }
+}
+
+
+
+
+
+/* eerste section, nav, grote witruimte?? */

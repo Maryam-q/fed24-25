@@ -201,6 +201,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   - scroll-margin-top werkt niet, heb het op verschillende tags geprobeerd maar werkt niet (regel 157, ervoor zorgen dat het niet telkens springt als je klikt op de nav)
   -banner gedeelte een deel va de tekst verbergen.
+  -in de eerste carousel met de 3 afbeeldingen zie je een stukje van de tekst niet.
 
 
   ### Agenda voor meeting
