@@ -21,6 +21,7 @@
       --h3-weight: 400;
       --h2-size:1.3em;
       --h2-weight: 700;
+      --hover-a-button-background-color:#c93920;
   
   }
   
@@ -125,14 +126,17 @@
     cursor: pointer;
     text-transform: uppercase;
     font-size: .8em;
+    transition: transform 0.3s ease;
 
   }
 
 
 
   main > section:nth-of-type(1) > ul:nth-of-type(1) li a:hover {
-    background-color: #c93920;
-    transition: transform 0.3s ease;
+    background-color: var(--hover-a-button-background-color);
+    transition: transform 0.4s;
+    transform: scale(0.9);
+
   }
 
 /* STYLEN NAV KNOPJES CAROUSEL */
@@ -171,7 +175,6 @@ width:100%;
 flex-shrink:0;
 }
 
-/* scroll-margin-top werkt niet, heb het op verschillende tags geprobeerd maar werkt niet */
 
 main > section:nth-of-type(1) nav ul li a{
 display:block;
@@ -179,34 +182,17 @@ height:1em;
 aspect-ratio:3/0.5;
 background-color:rgb(65, 65, 65);
 border-radius:.5em;
+transition: transform 0.3s ease;
 }
 
-
-/* RESPONSIVE MAKEN CAROUSEL */
-
-
-
-
-
-
-
+main > section:nth-of-type(1) nav ul li a:hover {
+  transform: scale(0.8);
+  background-color: #f05032;
+}
 
 
 
   /* STYLEN SLIDES MOST POPULAR */
-
-  /* section:nth-of-type(2) > ul {
-    display: grid;
-    grid-auto-flow: column;
-    margin: 1em;
-    padding: 1em;
-    max-width: 100%;
-    overflow-x: auto;
-
-  }
- */
-
-
 
 section:nth-of-type(2) ul {
   display: grid;
@@ -228,13 +214,14 @@ section:nth-of-type(2) li {
 
 
 section:nth-of-type(2) li img {
-min-width: 8em;
+min-width: 10em;
+max-width:100%;
   transition: transform 0.3s ease;
 }
 
-section:nth-of-type(2) li img:hover {
+/* section:nth-of-type(2) li img:hover {
   transform: scale(1.1); 
-}
+} */
 
 section:nth-of-type(2) h2{
   font-size: var(--h2-size);
@@ -252,6 +239,12 @@ section:nth-of-type(2) li h3 {
   order: 1;
 }
 
+section:nth-of-type(2) li h3:hover {
+  color:#f05032;
+  transform: scale(1.1);
+}
+
+
 section:nth-of-type(2) li p {
   font-size: 0.9em;
   color: #7b7b7b;
@@ -268,7 +261,7 @@ section:nth-of-type(2) li p {
 
 /* BANNER STYLEN */
 
-section:nth-of-type(4) {
+section:nth-of-type(3) {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -281,16 +274,15 @@ section:nth-of-type(3) img {
   margin-bottom: 1em; 
 }
 
-section:nth-of-type(4) h2 {
+section:nth-of-type(3) h2 {
   font-size: var(--h2-size);
   font-weight: var(--h2-weight);
   color: #000;
   margin: 0.5em 0;
   text-align: left; 
-  /* h2 moet links staan.... werkt niet met text-align??? ook met de p zo */
 }
 
-section:nth-of-type(4) p:first-of-type {
+section:nth-of-type(3) p:first-of-type {
   font-size: 1em;
   color: #ccc; 
   margin: 0;
@@ -298,7 +290,7 @@ section:nth-of-type(4) p:first-of-type {
 }
 
 
-section:nth-of-type(4) p:nth-of-type(2) {
+section:nth-of-type(3) p:nth-of-type(2) {
   font-size: 0.95em;
   color: #000;
   text-align: justify;
@@ -310,7 +302,7 @@ section:nth-of-type(4) p:nth-of-type(2) {
 
   /* button start watching s1 e1 */
 
-section:nth-of-type(4) > a {
+section:nth-of-type(3) > a {
   display: inline-block;
   text-decoration: none;
   margin-top: 1em;
@@ -324,62 +316,66 @@ section:nth-of-type(4) > a {
   padding: 1em 5em;
   cursor: pointer;
   text-transform: uppercase;
-}
-
-
-
-section:nth-of-type(4) > a:hover {
-  background-color: #c93920;
   transition: transform 0.3s ease;
 }
+
+
+
+section:nth-of-type(3) > a:hover {
+  background-color: var(--hover-a-button-background-color);
+  transition: transform 0.4s;
+  transform: scale(0.9);
+}
+
+
 
 
 /* NEW EPISODE SECTION */
 
 
-section:nth-of-type(5) {
+section:nth-of-type(4) {
   padding: 1em;
  
 }
 
-section:nth-of-type(5) h2 {
+section:nth-of-type(4) h2 {
   color: #000;
   font-size: 1.5em;
   margin-bottom: 0.5em;
 }
 
-section:nth-of-type(5) article {
+section:nth-of-type(4) article {
   display: flex;
   align-items: center;
   margin-bottom: 1em;
 }
 
-section:nth-of-type(5) article img {
+section:nth-of-type(4) article img {
   width: 30%; 
   height: auto;
   border-radius: 4px;
   margin-right: 1em;
 }
 
-section:nth-of-type(5) article h4 {
+section:nth-of-type(4) article h4 {
   font-size: 1.2em;
   margin: 0;
   font-weight: bold;
   color: #000;
 }
 
-section:nth-of-type(5) article p {
+section:nth-of-type(4) article p {
   font-size: 0.9em;
   color: #ccc;
   margin: 0.2em 0;
 }
 
-section:nth-of-type(5) a {
+section:nth-of-type(4) a {
   text-decoration: none;
   color: inherit;
 }
 
-section:nth-of-type(5) h3 {
+section:nth-of-type(4) h3 {
   border-bottom: .1em solid #4f4f4f;
   padding-bottom: 0.5em;
   margin-top: 1em;
@@ -396,7 +392,7 @@ section:nth-of-type(5) h3 {
 
 
 
-@media (min-width: 700px) {
+@media (min-width: 45em) {
 
   /* CAROUSEL STYLING */
   main > section:nth-of-type(1) > ul:nth-of-type(1) {
@@ -454,7 +450,7 @@ section:nth-of-type(5) h3 {
   section:nth-of-type(2) ul {
     display: flex;
     overflow-x: scroll; 
-    gap: 2em; 
+    gap: 1em; 
   }
   
   section:nth-of-type(2) ul li {
@@ -512,8 +508,6 @@ section:nth-of-type(5) h3 {
   }
 
 
-  /* lukt mij niet om de 4e section naast de 3e te krijgen, dus de tekst 
-  naast de afbeelding? ik krijg nu alleen beide op de helft van het scherm te zien*/
 
 
 
@@ -544,5 +538,3 @@ section:nth-of-type(5) h3 {
 
 
 
-
-/* eerste section, nav, grote witruimte?? */
