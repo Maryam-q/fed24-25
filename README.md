@@ -43,8 +43,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/homepage.png" width="375px" alt="Op deze pagina vindt je verschillende anime en nieuwtjes.">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  One Piece  
+  <img src="readme-images/mobielonepiece.png" width="375px" alt="Deatail pagina van de serie One Piece">
  
 </details>
 
@@ -79,8 +79,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/hamburgermenu.png" width="375px" alt="breakdown van een dynamisch deel">
 
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+### tweede pagina:
+  <img src="readme-images/breakdownschets-tweedepagina.png" width="375px" alt="breakdown van de tweede pagina one piece">
+
 
 </details>
 
@@ -166,12 +167,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
         
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
+    hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - we hebben samen gekeken naar wat mogelijk is om de bg-img werkend te krijgen
 
 </details>
 
@@ -185,8 +183,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
-
+  - headings langs gaan 
+  - elke image heeft een goeie alt bescrijving
+  - een light en dark mode toegevoegd
+  
 </details>
 
 
@@ -204,23 +204,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   -in de eerste carousel met de 3 afbeeldingen zie je een stukje van de tekst niet.
 
 
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
-
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - niet veel aandacht geven an de margin-top als het niet werkt
+  
 
 </details>
 
@@ -234,19 +221,22 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
-
+  <img src="readme-images/mijnwebsite/home-mobiel.png" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/mijnwebsite/home-desktop.png" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/mijnwebsite/onepiece-mobiel.png" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/mijnwebsite//onepiece-desktop.png" width="375px" alt="uitomst opdracht 1">
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Dit vond ik goed gaan
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
-
+  <img src="readme-images/mijnwebsite/home-banner-lijst.png" width="375px" alt="top">
+  <img src="readme-images/mijnwebsite/intro-onepiece-mobiel.png.png" width="375px" alt="top">
+  <img src="readme-images/mijnwebsite/intro-onepiece-desktop.png" width="375px" alt="top">
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Hier lukte het mij niet om de gehele afbeelding te laten zien zonder dat het schaalt het inzoomt
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/mijnwebsite/banner-onepiece.png" width="375px" alt="bummer">
 </details>
 
 
@@ -266,4 +256,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   2. bron 2
   3. ...
 
+ - dark/light mode: https://dlo.mijnhva.nl/d2l/common/dialogs/quickLink/quickLink.d2l?ou=609314&type=coursefile&fileId=FED+24-25+-+Blok+1+-+Intro+kleurtjes+met+has+en+lightdark.pdf
+- verbergen van een h2 in een section: https://www.a11yproject.com/posts/how-to-hide-content/
+- verder heb ik ChatGPT gebruikt voor uitleg en of er betere opties zijn die ik kon gebruiken. de code die ik kreeg teste ik uit in codepen vervolgens heb ik het aangepast zodat het berter bij mijn site past.
 </details>
