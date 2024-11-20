@@ -1,211 +1,224 @@
 /**************/
 /* CSS REMEDY */
 /**************/
-*, *::after, *::before {
-    box-sizing:border-box;  
-    padding: 0;
-  }
-  
-
-  
-  
-  /*********************/
-  /* CUSTOM PROPERTIES */
-  /*********************/
-  :root {
-      /* startje */
-      --color-text:#111;
-      --color-background:#eee;
-      --header-menu-color: #23252b;
-      --h3-size: .8em;
-      --h3-weight: 400;
-      --h2-size:1.3em;
-      --h2-weight: 700;
-      --hover-a-button-background-color:#c93920;
-  
-  }
-  
-  
-  /* Font styling */
-  
-  @font-face {
-      font-family: 'Lato';
-      src: url('../font/Lato-Light.otf');
-      font-weight: 300;
-      font-style: normal;
-  }
-  
-  @font-face {
-      font-family: 'Lato';
-      src: url('../font/Lato-Regular.otf');
-      font-weight: 400;
-      font-style: normal;
-  }
-  
-  @font-face {
-      font-family: 'Lato';
-      src: url('../font/Lato-Bold.otf');
-      font-weight: 700;
-      font-style: normal;
-  }
-  
-  @font-face {
-      font-family: 'Lato';
-      src: url('../font/Lato-Italic.otf');
-      font-weight: 400;
-      font-style: normal;
-  }
-  
-  @font-face {
-      font-family: 'Lato';
-      src: url('../font/Lato-Hairline.otf');
-      font-weight: 100;
-      font-style: normal;
-  }
-
-
-  body {
-    font-family: 'lato-regular';
-  }
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+}
 
 
 
-  /* STYLEN CAROUSEL */
-  main > section:nth-of-type(1) ul {
-    display: flex;
-    overflow: hidden;
-    padding: 0;
-  }
 
-  main > section:nth-of-type(1) p {
-    color: #eee;
-    text-shadow: .1em .1em #23252b;
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+  /* startje */
+  --color-text: #111;
+  --color-background: #eee;
+  --header-menu-color: #23252b;
+  --h2-size: 1.3em;
+  --h2-desktop: 2em;
+  --h2-weight: 700;
+  --h3-size: .8em;
+  --h3-desktop: 1.5em 
+  --h3-weight: 400;
+  --hover-a-button-background-color: #c93920;
+}
 
-    /* bron text-shadow: https://www.w3schools.com/cssref/tryit.php?filename=trycss3_text-shadow */
-  }
+/* Font styling */
 
+@font-face {
+  font-family: 'Lato';
+  src: url('../font/Lato-Light.otf');
+  font-weight: 300;
+  font-style: normal;
+}
 
-  main > section:nth-of-type(1) > ul > li {
-    height: 50vh;
-    background-size: cover;
-    background-position: 85% center;
-  
-    display: grid;
-    justify-content: center;
-    align-content: end;
-    justify-items: center;
-    text-align: center;
-    padding: 1em;
-    min-width: 100vw;
-    flex-shrink: 0;
-    scroll-behavior:smooth;
-  }
+@font-face {
+  font-family: 'Lato';
+  src: url('../font/Lato-Regular.otf');
+  font-weight: 400;
+  font-style: normal;
+}
 
-    main > section:nth-of-type(1) > ul > li:nth-of-type(1) {
-    background-image: url('../images/carousel/onepiece.png');
-  }
+@font-face {
+  font-family: 'Lato';
+  src: url('../font/Lato-Bold.otf');
+  font-weight: 700;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: 'Lato';
+  src: url('../font/Lato-Italic.otf');
+  font-weight: 400;
+  font-style: normal;
+}
 
-  main > section:nth-of-type(1) > ul > li:nth-of-type(2) {
-    background-image: url('../images/carousel/tasuketsu.png');
-  }
-
-
-  main > section:nth-of-type(1) > ul > li:nth-of-type(3) {
-    background-image: url('../images/carousel/wistoria.png');
-  }
-
-
-  /* STYLEN BUTTON CAROUSEL STRAT WATCHING  */
-
-  main > section:nth-of-type(1) > ul:nth-of-type(1) li a {
-    background-color: #f05032;
-    color: #fff;
-    border: none;
-    padding: 1em 5em;
-    cursor: pointer;
-    text-transform: uppercase;
-    font-size: .8em;
-    transition: transform 0.3s ease;
-
-  }
+@font-face {
+  font-family: 'Lato';
+  src: url('../font/Lato-Hairline.otf');
+  font-weight: 100;
+  font-style: normal;
+}
 
 
+body {
+  font-family: 'lato-regular';
+  margin: 0;
+}
 
-  main > section:nth-of-type(1) > ul:nth-of-type(1) li a:hover {
-    background-color: var(--hover-a-button-background-color);
-    transition: transform 0.4s;
-    transform: scale(0.9);
 
-  }
+
+/* STYLEN CAROUSEL */
+main>section:nth-of-type(1) ul {
+  display: flex;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+main>section:nth-of-type(1) p {
+  color: #eee;
+  text-shadow: .1em .1em #23252b;
+
+  /* bron text-shadow: https://www.w3schools.com/cssref/tryit.php?filename=trycss3_text-shadow */
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+main>section:nth-of-type(1)>ul>li {
+  height: 50vh;
+  background-size: cover;
+  background-position: 85% center;
+
+  display: grid;
+  justify-content: center;
+  align-content: end;
+  justify-items: center;
+  text-align: center;
+  padding: 1em;
+  min-width: 100vw;
+  flex-shrink: 0;
+  scroll-behavior: smooth;
+}
+
+main>section:nth-of-type(1)>ul>li:nth-of-type(1) {
+  background-image: url('../images/carousel/onepiece.png');
+}
+
+
+main>section:nth-of-type(1)>ul>li:nth-of-type(2) {
+  background-image: url('../images/carousel/tasuketsu.png');
+}
+
+
+main>section:nth-of-type(1)>ul>li:nth-of-type(3) {
+  background-image: url('../images/carousel/wistoria.png');
+}
+
+
+/* STYLEN BUTTON CAROUSEL STRAT WATCHING  */
+
+main>section:nth-of-type(1)>ul:nth-of-type(1) li a {
+  background-color: #f05032;
+  color: #fff;
+  border: none;
+  padding: 1em 5em;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: .8em;
+  transition: transform 0.3s ease;
+  text-decoration: none;
+}
+
+
+
+main>section:nth-of-type(1)>ul:nth-of-type(1) li a:hover {
+  background-color: var(--hover-a-button-background-color);
+  transition: transform 0.4s;
+  transform: scale(0.9);
+
+}
 
 /* STYLEN NAV KNOPJES CAROUSEL */
 
-main > section:nth-of-type(1) nav{
-list-style-type: none;
-background-color: #ffffff80;
+main>section:nth-of-type(1) nav {
+  list-style-type: none;
+  background-color: #ffffff80;
 
 }
 
 
-main > section:nth-of-type(1) nav ul{
+main>section:nth-of-type(1) nav ul {
   /* margin:0;
 	padding:0;
 	list-style-type:none; */
-	
-	/* display:flex; */
-	overflow:hidden;
-	scroll-behavior:smooth;
+
+  /* display:flex; */
+  overflow: hidden;
+  scroll-behavior: smooth;
 
 
-  margin:0;
-	padding:0;
-	list-style-type:none;
-	
-	display:flex;
-	gap:1em;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  display: flex;
+  gap: 1em;
   justify-content: center;
   padding-top: .5em;
 
 }
 
-main > section:nth-of-type(1) > ul li{
-scroll-margin-top: 10em;
-width:100%;
-flex-shrink:0;
+main>section:nth-of-type(1)>ul li {
+  scroll-margin-top: 10em;
+  width: 100%;
+  flex-shrink: 0;
 }
 
 
-main > section:nth-of-type(1) nav ul li a{
-display:block;
-height:1em;
-aspect-ratio:3/0.5;
-background-color:rgb(65, 65, 65);
-border-radius:.5em;
-transition: transform 0.3s ease;
+main>section:nth-of-type(1) nav ul li a {
+  display: block;
+  height: 1em;
+  aspect-ratio: 3/0.5;
+  background-color: rgb(65, 65, 65);
+  border-radius: .5em;
+  transition: transform 0.3s ease;
 }
 
-main > section:nth-of-type(1) nav ul li a:hover {
+main>section:nth-of-type(1) nav ul li a:hover {
   transform: scale(0.8);
   background-color: #f05032;
 }
 
 
 
-  /* STYLEN SLIDES MOST POPULAR */
+/* STYLEN SLIDES MOST POPULAR */
 
-section:nth-of-type(2) ul {
+main section:nth-of-type(2) ul {
   display: grid;
   grid-auto-flow: column;
-  grid-gap: 1em; 
-  overflow-x: auto; 
-  scroll-behavior: smooth; 
-  padding-bottom: 1em;
+  grid-gap: 1em;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 0 1em 1em;
   max-width: 100%;
 }
 
 
-section:nth-of-type(2) li {
+main section:nth-of-type(2) li {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -213,24 +226,21 @@ section:nth-of-type(2) li {
 }
 
 
-section:nth-of-type(2) li img {
-min-width: 10em;
-max-width:100%;
+main section:nth-of-type(2) li img {
+  min-width: 10em;
+  max-width: 100%;
   transition: transform 0.3s ease;
 }
 
-/* section:nth-of-type(2) li img:hover {
-  transform: scale(1.1); 
-} */
-
-section:nth-of-type(2) h2{
+main section:nth-of-type(2) h2 {
   font-size: var(--h2-size);
   font-weight: var(--h2-weight);
   color: #000;
+  padding: 1em;
 }
 
 
-section:nth-of-type(2) li h3 {
+main section:nth-of-type(2) li h3 {
   font-size: 1em;
   color: #000;
   margin: 0.5em 0 0.3em 0;
@@ -239,59 +249,56 @@ section:nth-of-type(2) li h3 {
   order: 1;
 }
 
-section:nth-of-type(2) li h3:hover {
-  color:#f05032;
+main section:nth-of-type(2) li h3:hover {
+  color: #f05032;
   transform: scale(1.1);
 }
 
 
-section:nth-of-type(2) li p {
+main section:nth-of-type(2) li p {
   font-size: 0.9em;
   color: #7b7b7b;
   order: 2;
 }
 
 
-
-
-
-
-
-
-
 /* BANNER STYLEN */
 
-section:nth-of-type(3) {
+ section:nth-of-type(3) {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #fff; 
+  color: #fff;
+  padding: 0 1em 0 1em;
 }
 
 section:nth-of-type(3) img {
-  width: 100%; 
-  max-width: 100%; 
-  margin-bottom: 1em; 
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1em;
+  order: -1;
 }
 
-section:nth-of-type(3) h2 {
+
+section:nth-of-type(3) .banner h2 {
   font-size: var(--h2-size);
   font-weight: var(--h2-weight);
   color: #000;
-  margin: 0.5em 0;
-  text-align: left; 
+  text-align: left;
+  margin: auto;
+  margin-bottom: .5em;
 }
 
-section:nth-of-type(3) p:first-of-type {
+section:nth-of-type(3) .banner p:first-of-type {
   font-size: 1em;
-  color: #ccc; 
+  color: #ccc;
   margin: 0;
-  text-align: center;
+  text-align: left;
 }
 
 
-section:nth-of-type(3) p:nth-of-type(2) {
-  font-size: 0.95em;
+section:nth-of-type(3) .banner p:nth-of-type(2) {
+  font-size: 1em;
   color: #000;
   text-align: justify;
   margin: 1em 0;
@@ -299,14 +306,24 @@ section:nth-of-type(3) p:nth-of-type(2) {
   max-width: 100%;
 }
 
+.banner p:nth-of-type(2) {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
 
-  /* button start watching s1 e1 */
+}
 
-section:nth-of-type(3) > a {
-  display: inline-block;
+
+/* button start watching s1 e1 */
+
+.banner a {
+  display: block;
+  align-content: end;
+  justify-items: center;
+  text-align: center;
   text-decoration: none;
-  margin-top: 1em;
-  /* transition: background-color 0.3s ease; */
   font-size: .8em;
 
 
@@ -319,222 +336,209 @@ section:nth-of-type(3) > a {
   transition: transform 0.3s ease;
 }
 
-
-
-section:nth-of-type(3) > a:hover {
+.banner a:hover {
   background-color: var(--hover-a-button-background-color);
   transition: transform 0.4s;
   transform: scale(0.9);
 }
 
 
-
-
 /* NEW EPISODE SECTION */
 
 
 section:nth-of-type(4) {
+  display: grid;
+  gap: 1em;
   padding: 1em;
- 
 }
 
-section:nth-of-type(4) h2 {
-  color: #000;
-  font-size: 1.5em;
-  margin-bottom: 0.5em;
+section:nth-of-type(4) h4,
+p {
+  padding: 0;
+  margin: 0.5em;
 }
 
-section:nth-of-type(4) article {
+section:nth-of-type(4) ul {
+  margin: 0;
+  list-style-type: "";
+}
+
+section:nth-of-type(4) li {
+  display: flex;
+  padding-bottom: 1em;
+}
+
+section:nth-of-type(4) ul li img {
+  width: 30%;
+  display: block;
+  order: -1;
+}
+
+.epinfo {
+  text-align: start;
+  padding-left: 0.5em;
+}
+
+
+/* SLAPENDE KAT */
+
+section:nth-of-type(5) {
+  padding: 1em;
   display: flex;
   align-items: center;
-  margin-bottom: 1em;
+  flex-direction: column;
+  text-align: center;
 }
 
-section:nth-of-type(4) article img {
-  width: 30%; 
-  height: auto;
-  border-radius: 4px;
-  margin-right: 1em;
+section:nth-of-type(5) img {
+  order: -1;
+  width: max-content;
 }
 
-section:nth-of-type(4) article h4 {
-  font-size: 1.2em;
-  margin: 0;
-  font-weight: bold;
-  color: #000;
+section:nth-of-type(5) p {
+  font-weight: 500;
+  font-size: 1.3em;
 }
 
-section:nth-of-type(4) article p {
-  font-size: 0.9em;
-  color: #ccc;
-  margin: 0.2em 0;
-}
-
-section:nth-of-type(4) a {
+section:nth-of-type(5) a {
+  border: #f05032 solid .2em;
+  padding: 0.5em 1em 0.5em;
+  color: #f05032;
   text-decoration: none;
-  color: inherit;
 }
-
-section:nth-of-type(4) h3 {
-  border-bottom: .1em solid #4f4f4f;
-  padding-bottom: 0.5em;
-  margin-top: 1em;
-}
-
-
-
 
 
 
 /* RESPONSIVE MAKEN */
 
-
-
-
-
-@media (min-width: 45em) {
+@media (min-width: 40em) {
 
   /* CAROUSEL STYLING */
-  main > section:nth-of-type(1) > ul:nth-of-type(1) {
+  main>section:nth-of-type(1)>ul:nth-of-type(1) {
     flex-direction: row;
-    justify-content: flex-start; 
-    min-height: 60vh; 
+    justify-content: flex-start;
+    min-height: 60vh;
 
   }
 
-  main > section:nth-of-type(1) nav {
+  main>section:nth-of-type(1) nav {
     flex-direction: row;
-    justify-content: flex-start; 
+    justify-content: flex-start;
 
   }
 
-  main > section:nth-of-type(1) > ul > li {
+  main>section:nth-of-type(1)>ul>li {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
+    text-align: left;
     height: auto;
     /* min-width: 100%; */
     padding: 2em;
   }
 
-  main > section:nth-of-type(1) > ul li p {
+  main>section:nth-of-type(1)>ul li p {
     font-size: 1.2em;
-    
+    padding-right: 35em;
+    margin: 0;
   }
 
-  main > section:nth-of-type(1) > ul li a {
+  main>section:nth-of-type(1)>ul li a {
     font-size: 1em;
     padding: 1em 3em;
     margin-top: 1em;
-    
-  }
 
-  main > section:nth-of-type(1) > ul li{
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
   }
 
   /* start watching button links */
-  main > section:nth-of-type(1) > ul li a {
+  main>section:nth-of-type(1)>ul li a {
     align-self: self-start;
-    
-    
+
+
   }
 
 
 
-    /*  MOST POPULAR */
-  section:nth-of-type(2) ul {
+  /*  MOST POPULAR */
+  main section:nth-of-type(2) ul {
     display: flex;
-    overflow-x: scroll; 
-    gap: 1em; 
+    overflow-x: scroll;
+    gap: 1em;
   }
-  
-  section:nth-of-type(2) ul li {
-    min-width: 20%; 
+
+  main section:nth-of-type(2) ul li {
+    min-width: 20%;
   }
-  
-  section:nth-of-type(2) ul li img {
+
+  main section:nth-of-type(2) ul li img {
     width: 100%;
     height: auto;
   }
-  
-  section:nth-of-type(2) li h3 {
+
+  main section:nth-of-type(2) li h3 {
     font-size: 1em;
   }
-  
-  section:nth-of-type(2) li p {
+
+  main section:nth-of-type(2) li p {
     font-size: .8em;
-  
+
   }
-  
-  
-  
+
+
+
 
 
   /* BANNER STYLING */
+
   section:nth-of-type(3) {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 1em;
+    padding: 3em;
   }
 
   section:nth-of-type(3) img {
-    max-width: 50%; 
+    width: 100%;
+    max-width: 35em;
     height: auto;
   }
 
-  section:nth-of-type(4)  {
-    max-width: 50%; 
-    text-align: center; 
+
+
+  .banner a {
+    width: 50%;
+  }
+
+
+  /* NEW EPISODES GRID */
+
+  section:nth-of-type(4) {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 10em 0;
+
   }
 
   section:nth-of-type(4) h2 {
-    font-size: 2em;
-    text-align: center;
+    grid-column: 1/-1;
   }
 
-  section:nth-of-type(4) p {
-    font-size: 1.2em;
-  }
-
-  section:nth-of-type(4) a {
-    margin-top: 1em;
-    padding: 1em 3em;
+  section:nth-of-type(4) h3 {
+    grid-row-start: 2;
   }
 
 
 
 
 
-
-
-  /* NEW EPISODES NAAST ELKAAR */
-  section:nth-of-type(5) {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 1em; 
+  h2 {
+    font-size: var(--h2-desktop);
   }
 
-  section:nth-of-type(5) article {
-    width: 50%; 
+  h3 {
+    font-size: var(--h3-desktop);
   }
 
-  section:nth-of-type(5) article img {
-    width: 30%; /* Smaller images */
-    height: auto;
-  }
 
-  section:nth-of-type(5) h4 {
-    font-size: 1.2em;
-  }
 }
-
-
-
-

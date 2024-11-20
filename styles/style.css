@@ -1,11 +1,13 @@
 /**************/
 /* CSS REMEDY */
 /**************/
-*, *::after, *::before {
-  box-sizing:border-box;
-  /* background-color: #23252b;
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    /* background-color: #23252b;
   color: #eee; */
- 
+
 }
 
 
@@ -14,10 +16,10 @@
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
-	--header-menu-color: #23252b;
+    /* startje */
+    --color-text: #111;
+    --color-background: #eee;
+    --header-menu-color: #23252b;
 
 }
 
@@ -60,18 +62,9 @@
 }
 
 
-
-/* img {
-    max-width:100%;
-} */
-
-/* header nav */
-/* header nav:nth-of-type(1) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-} */
-
+header {
+    background-color: #23252b;
+}
 
 header nav:nth-of-type(1) ul {
     margin: 0;
@@ -83,13 +76,11 @@ header nav:nth-of-type(1) ul {
     align-items: center;
 }
 
-
 header nav:nth-of-type(1) ul li button img {
     min-width: 2em;
 }
 
-
-header > nav:nth-of-type(2) {
+header>nav:nth-of-type(2) {
     color: white;
     margin: 0;
     padding: 0;
@@ -98,7 +89,6 @@ header > nav:nth-of-type(2) {
     padding: 1em;
     align-content: start;
     gap: 1em;
-  
 
     position: fixed;
     left: 0;
@@ -108,10 +98,10 @@ header > nav:nth-of-type(2) {
     background-color: var(--header-menu-color);
 
     translate: -100%;
-    transition:.3s ease-in-out;
+    transition: .3s ease-in-out;
 }
 
-header > nav ul {
+header>nav ul {
     display: grid;
     padding: 0;
     list-style: none;
@@ -124,14 +114,13 @@ header nav:nth-of-type(1) ul li:first-of-type {
     margin-right: auto;
 }
 
-
 header nav:nth-of-type(1) ul li:nth-of-type(2) img {
     width: 1.5em;
     transition: transform 0.3s ease;
 }
 
 header nav:nth-of-type(1) ul li:nth-of-type(2) img:hover {
-    transform: scale(1.2) ;
+    transform: scale(1.2);
 }
 
 nav:nth-of-type(1) button {
@@ -150,98 +139,82 @@ nav:nth-of-type(2) button {
     font-size: .85em;
 }
 
-header > nav.toonMenu {
+header>nav.toonMenu {
     translate: 0;
 }
 
 
+/* FOOTER */
 
-
-  /* FOOTER */
-
-  footer {
-    color: #000000;
+footer {
     padding: 1em;
-    text-align: left;
-    font-family: 'lato-regular';
+    padding-top: 4em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
 }
 
 footer section {
-  display: flex;
+    display: flex;
+    align-items: flex-start;
+    gap: 2em;
+    margin-bottom: 1em;
 }
 
-footer h3, footer h4 {
+footer h3 {
+    flex: 0 0 9em;
     color: #000;
     font-size: 1.2em;
-    margin-bottom: .5em;
-    display: block;
+    margin: 0;
+    text-align: left;
 }
 
 footer ul {
-    list-style-type: none;
+    flex: 1;
+    list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 footer ul li {
-    margin: .2 0;
+    margin-bottom: .5em;
 }
 
 footer ul li a {
-    color: #ccc;
+    color: #a7a7a7;
     text-decoration: none;
     font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    gap: .5em;
+}
+
+footer section:nth-of-type(2) ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+footer section:nth-of-type(2) img {
+    height: 1.5em;
+    width: 1.5em;
 }
 
 footer ul li a:hover {
-    color: #ff8000; 
-}
-
-footer ul li a img {
-    vertical-align: middle;
-    margin-right: .4emx;
-    height: 1em; 
-}
-
-footer p {
-    font-size: 0.8em;
-    color: #ccc;
+    color: #ff8000;
+    text-decoration: underline;
 }
 
 footer section:last-of-type h4 {
-    font-size: 1.1em;
     font-weight: bold;
-    margin-bottom: .3em;
+    color: #000;
+    margin: 0;
 }
 
 footer section:last-of-type p {
     font-size: 0.9em;
-    color: #ff8000; 
+    color: #ff8000;
 }
-
-
-
-footer section:nth-of-type(2) ul {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-footer section:nth-of-type(2) ul li {
-  margin-bottom: .5em;
-}
-
-footer section:nth-of-type(2) ul li a {
-  display: flex;
-  align-items: center;
-}
-
-footer section:nth-of-type(2) ul li a img {
-  margin-right: .5em;
-  height: 1.5em; 
-}
-
-
-
 
 
 
@@ -252,9 +225,13 @@ footer section:nth-of-type(2) ul li a img {
 /* RESPONSIVE HEADER BEIDE NAVS */
 
 
-  @media (min-width: 45em) {
+@media (min-width: 40em) {
     header nav:nth-of-type(1) button {
         display: none;
+    }
+
+    header nav:nth-of-type(1) {
+        order: 1;
     }
 
     header nav:nth-of-type(2) button {
@@ -269,12 +246,45 @@ footer section:nth-of-type(2) ul li a img {
     }
 
     header nav:nth-of-type(2) ul {
-        color: #000;
+        color: #eee;
         display: flex;
+    }
+
+    header nav:nth-of-type(2)>ul:nth-of-type(2) {
+        display: flex;
+        flex-direction: row;
+
     }
 
     header {
         display: flex;
         align-items: center;
+        justify-content: space-around;
     }
-  }
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2em;
+        position: relative;
+    }
+
+    footer section {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0 5em 0;
+    }
+
+    footer section:nth-of-type(3) {
+        position: absolute;
+        bottom: -5em;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0;
+    }
+
+    footer section:nth-of-type(3) {
+        font-size: .8em;
+    }
+}
