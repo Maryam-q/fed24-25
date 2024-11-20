@@ -247,15 +247,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 <details open>
   <summary>continu bijhouden terwijl je werkt</summary>
-
-  Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg). 
-  Nb. ChatGpT en andere AI horen er ook bij.
-  Nb. Vermeld de bronnen ook in je code.
-
-  1. bron 1
-  2. bron 2
-  3. ...
-
  - dark/light mode: https://dlo.mijnhva.nl/d2l/common/dialogs/quickLink/quickLink.d2l?ou=609314&type=coursefile&fileId=FED+24-25+-+Blok+1+-+Intro+kleurtjes+met+has+en+lightdark.pdf
 - verbergen van een h2 in een section: https://www.a11yproject.com/posts/how-to-hide-content/
 - verder heb ik ChatGPT gebruikt voor uitleg en of er betere opties zijn die ik kon gebruiken. de code die ik kreeg teste ik uit in codepen vervolgens heb ik het aangepast zodat het berter bij mijn site past.
