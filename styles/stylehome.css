@@ -26,7 +26,26 @@
   --h3-desktop: 1.5em 
   --h3-weight: 400;
   --hover-a-button-background-color: #c93920;
+
+
+
+  color-scheme: light dark; 
+
+  --color-textx: light-dark(#000, #eee);
+  --color-text-h3: light-dark(#7b7b7b, #eee)
+  --color-backgroundx: light-dark(#eee, #23252b);
+  --color-navbanner: light-dark(#23252b, #eee);
 }
+
+:root:has([value="light"]:checked) {
+	color-scheme:light;
+}
+
+:root:has([value="dark"]:checked) {
+	color-scheme:dark;
+} 
+/* bron dark/light mode: https://dlo.mijnhva.nl/d2l/common/dialogs/quickLink/quickLink.d2l?ou=609314&type=coursefile&fileId=FED+24-25+-+Blok+1+-+Intro+kleurtjes+met+has+en+lightdark.pdf */
+
 
 /* Font styling */
 
@@ -69,8 +88,22 @@
 body {
   font-family: 'lato-regular';
   margin: 0;
+  background-color: var(--color-backgroundx);
 }
 
+
+h2 {
+  color: var(--color-textx);
+}
+
+section h2:focus {
+background-color: #f04e3283;
+}
+
+
+h3 {
+  color: var(--color-text-h3);
+}
 
 
 /* STYLEN CAROUSEL */
@@ -156,17 +189,12 @@ main>section:nth-of-type(1)>ul:nth-of-type(1) li a:hover {
 
 main>section:nth-of-type(1) nav {
   list-style-type: none;
-  background-color: #ffffff80;
+  background-color: var(--color-backgroundx);
 
 }
 
 
 main>section:nth-of-type(1) nav ul {
-  /* margin:0;
-	padding:0;
-	list-style-type:none; */
-
-  /* display:flex; */
   overflow: hidden;
   scroll-behavior: smooth;
 
@@ -193,7 +221,7 @@ main>section:nth-of-type(1) nav ul li a {
   display: block;
   height: 1em;
   aspect-ratio: 3/0.5;
-  background-color: rgb(65, 65, 65);
+  background-color: var(--color-navbanner);
   border-radius: .5em;
   transition: transform 0.3s ease;
 }
@@ -232,17 +260,22 @@ main section:nth-of-type(2) li img {
   transition: transform 0.3s ease;
 }
 
+section:nth-of-type(2) li img:hover {
+  transition: transform 0.4s;
+  transform: scale(0.9);
+}
+
 main section:nth-of-type(2) h2 {
   font-size: var(--h2-size);
   font-weight: var(--h2-weight);
-  color: #000;
+  color: var(--color-textx);
   padding: 1em;
 }
 
 
 main section:nth-of-type(2) li h3 {
   font-size: 1em;
-  color: #000;
+  color: var(--color-text-h3);
   margin: 0.5em 0 0.3em 0;
   font-weight: var(--h3-weight);
   font-size: var(--h3-size);
@@ -283,7 +316,7 @@ section:nth-of-type(3) img {
 section:nth-of-type(3) .banner h2 {
   font-size: var(--h2-size);
   font-weight: var(--h2-weight);
-  color: #000;
+  color: var(--color-textx);
   text-align: left;
   margin: auto;
   margin-bottom: .5em;
@@ -299,7 +332,7 @@ section:nth-of-type(3) .banner p:first-of-type {
 
 section:nth-of-type(3) .banner p:nth-of-type(2) {
   font-size: 1em;
-  color: #000;
+  color: var(--color-textx);
   text-align: justify;
   margin: 1em 0;
   line-height: 1.6em;
@@ -374,6 +407,11 @@ section:nth-of-type(4) ul li img {
   order: -1;
 }
 
+section:nth-of-type(4) ul li img:hover {
+  transition: transform 0.4s;
+  transform: scale(0.9);
+}
+
 .epinfo {
   text-align: start;
   padding-left: 0.5em;
@@ -405,6 +443,11 @@ section:nth-of-type(5) a {
   padding: 0.5em 1em 0.5em;
   color: #f05032;
   text-decoration: none;
+}
+
+section:nth-of-type(5) a:hover {
+  transition: transform 0.4s;
+  transform: scale(0.9);
 }
 
 

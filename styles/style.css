@@ -19,9 +19,24 @@
     /* startje */
     --color-text: #111;
     --color-background: #eee;
-    --header-menu-color: #23252b;
 
+
+    color-scheme: light dark; 
+
+    --color-textx: light-dark(#000, #eee);
+    --color-text-h3: light-dark(#7b7b7b, #eee)
+    --color-backgroundx: light-dark(#eee, #23252b);
+    --color-navbanner: light-dark(#23252b, #eee);
 }
+:root:has([value="light"]:checked) {
+	color-scheme:light;
+}
+
+:root:has([value="dark"]:checked) {
+	color-scheme:dark;
+}  
+
+
 
 
 /* Font styling */
@@ -163,7 +178,7 @@ footer > section {
 
 footer h3 {
     flex: 0 0 9em;
-    color: #000;
+    color: var();
     font-size: 1.2em;
     margin: 0;
     text-align: left;
@@ -207,7 +222,7 @@ footer ul li a:hover {
 
 footer section:last-of-type h4 {
     font-weight: bold;
-    color: #000;
+    color: var(--color-textx);
     margin: 0;
 }
 
@@ -264,6 +279,8 @@ footer section:last-of-type p {
         display: flex;
         align-items: center;
         justify-content: space-around;
+        padding: 0 4em 0;
+        
     }
 
 
@@ -280,7 +297,7 @@ footer section:last-of-type p {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
-        padding: 0 5em 0;
+        padding: 0 7em 0;
     }
 
     footer section:nth-of-type(3) {
